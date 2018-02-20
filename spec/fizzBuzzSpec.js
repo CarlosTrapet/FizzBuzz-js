@@ -33,4 +33,16 @@ describe('Fizzbuzz', function() {
     });
   });
 
+  describe('outputs', function() {
+    it('fizz when fizzy', function() {
+      expect(fizzbuzz.says(3)).toEqual('Fizz');
+    });
+    it('fizz when fizzy', function() {
+      expect(fizzbuzz.says(5)).toEqual('Buzz');
+    });
+    it('fizz when fizzy', function() {
+      expect(fizzbuzz.says(15)).toEqual('FizzBuzz');
+    });
+  });
+
 });
